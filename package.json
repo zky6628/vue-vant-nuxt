@@ -1,0 +1,35 @@
+{
+  "name": "vue-vant-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "dev:qas": "cross-env API_ENV=QAS nuxt",
+    "build:qas": "cross-env API_ENV=QAS nuxt build",
+    "dev:uat": "cross-env API_ENV=UAT nuxt",
+    "build:uat": "cross-env API_ENV=UAT nuxt build",
+    "dev:prd": "cross-env API_ENV=PRD nuxt",
+    "build:prd": "cross-env API_ENV=PRD nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.4",
+    "axios": "^0.21.1",
+    "cookieparser": "^0.1.0",
+    "core-js": "^3.9.1",
+    "js-cookie": "^2.2.1",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "nuxt": "^2.15.3",
+    "vant": "^2.12.10"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.3",
+    "@nuxt/typescript-build": "^2.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "cross-env": "^7.0.3",
+    "postcss-px-to-viewport": "^1.1.1"
+  }
+}
